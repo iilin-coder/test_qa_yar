@@ -2,7 +2,6 @@
 cases:
   - C1278889
 team: stream video
-
 tags:
   - video
 name: Мок для параметров appversion
@@ -287,6 +286,5 @@ name: Мок для параметров appversion
       </rewriteRule>
     </rules>
   </rewriteSet>
-  <null/>
 </rewriteSet-array>
 ```
