@@ -1,7 +1,8 @@
 ---
 cases:
   - C1278889, 6703596, 6703597
-team: stream video
+teams: 
+  - stream video
 tags:
   - video
 ---

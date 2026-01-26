@@ -1,16 +1,14 @@
 ---
 cases:
-  - C1278889, 6703596
-team: stream video, stream ux, turk
+  - C1278889
+teams: 
+  - stream video
 tags:
   - video, app. feature
-name: Мок для параметров appversion
+name: Дескрипшн есть тег, но нет текста
 ---
 
 # description
-1. Добавляет фича тоггл на андроид
-2. Добавляет  фича тоггл на айос
-3. обавляет  фича тоггл для смарт тв
 ----
 
 ```charles
@@ -19,7 +17,7 @@ name: Мок для параметров appversion
 <rewriteSet-array>
   <rewriteSet>
     <active>true</active>
-    <name>&lt;M&gt; FeatureTooggle</name>
+    <name>FeatureTooggle</name>
     <hosts>
       <locationPatterns>
         <locationMatch>
@@ -91,37 +89,6 @@ name: Мок для параметров appversion
         <caseSensitive>false</caseSensitive>
         <replaceType>2</replaceType>
       </rewriteRule>
-      <rewriteRule>
-        <active>false</active>
-        <ruleType>7</ruleType>
-        <matchValue>Smart</matchValue>
-        <matchHeaderRegex>false</matchHeaderRegex>
-        <matchValueRegex>false</matchValueRegex>
-        <matchRequest>true</matchRequest>
-        <matchResponse>true</matchResponse>
-        <newValue></newValue>
-        <newHeaderRegex>false</newHeaderRegex>
-        <newValueRegex>false</newValueRegex>
-        <matchWholeValue>false</matchWholeValue>
-        <caseSensitive>false</caseSensitive>
-        <replaceType>2</replaceType>
-      </rewriteRule>
-      <rewriteRule>
-        <active>true</active>
-        <ruleType>7</ruleType>
-        <matchValue>&quot;feature_toggles&quot;:\s?\[</matchValue>
-        <matchHeaderRegex>false</matchHeaderRegex>
-        <matchValueRegex>true</matchValueRegex>
-        <matchRequest>false</matchRequest>
-        <matchResponse>true</matchResponse>
-        <newValue>&quot;feature_toggles&quot;:\s?\[</newValue>
-        <newHeaderRegex>false</newHeaderRegex>
-        <newValueRegex>false</newValueRegex>
-        <matchWholeValue>false</matchWholeValue>
-        <caseSensitive>false</caseSensitive>
-        <replaceType>2</replaceType>
-      </rewriteRule>
     </rules>
   </rewriteSet>
 </rewriteSet-array>
-```

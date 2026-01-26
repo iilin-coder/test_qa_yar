@@ -1,7 +1,8 @@
 ---
 cases:
   - C1278889
-team: stream
+teams: 
+  - stream
 tags:
   - video
 name: Мок епрст
