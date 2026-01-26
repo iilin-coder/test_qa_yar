@@ -6,7 +6,7 @@ teams:
   - stream ux
   - turk
 tags:
-  - video, app. feature
+  - video, app. feature, ux
 name: Мок для параметров appversion
 ---
 
